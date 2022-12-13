@@ -19,7 +19,7 @@ const UserInputs = (props) => {
     }
     const submitHander = (e) => {
         e.preventDefault();
-        if (onUserName.trim() === '' || +onUserAge.trim() === '') {
+        if (onUserName.trim().length === 0 || +onUserAge.trim().length === 0) {
             setIsError(true);
             SetErrorText('Please enter a valid name and age (no empty values).');
             return;
