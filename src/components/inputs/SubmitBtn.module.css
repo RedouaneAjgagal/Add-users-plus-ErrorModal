@@ -1,0 +1,14 @@
+.submitBtn {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start;
+}
+.submitBtn button {
+    background-color: purple;
+    color: #fff;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 6rem;
+}

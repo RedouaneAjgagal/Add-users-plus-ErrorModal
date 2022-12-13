@@ -1,0 +1,7 @@
+.outputItem {
+    border: 1px solid #ccc;
+    padding: .5rem;
+}
+.outputItem p {
+    font-weight: 500;
+}

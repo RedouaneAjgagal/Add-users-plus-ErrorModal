@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import style from './App.module.css';
+import UserForm from './components/inputs/UserForm';
+import OutPutContainer from './components/outputs/OutPutContainer';
+import React, { useState } from 'react';
 
 function App() {
+  const userData = [];
+  const [onUserData, setOnUserData] = useState(userData);
+
+  const userInfo = (props) => {
+    setOnUserData((prevData) => [props, ...prevData]);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style.app} >
+      <UserForm data={userInfo} onSaveError={Error} />
+      {onUserData.length > 0 ? <OutPutContainer data={onUserData} /> : null}
     </div>
   );
 }

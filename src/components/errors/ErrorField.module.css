@@ -1,0 +1,48 @@
+.errorLayer {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000000cc;
+    z-index: 9;
+}
+.errorField {
+    background-color: #fff;
+    border-radius: 1rem;
+    position: absolute;
+    width: 100%;
+    max-width: 30rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.title {
+    background-color: purple;
+    padding: .7rem 1rem .8rem;
+    border-radius: 1rem 1rem 0 0;
+}
+.title h2 {
+    color: #fff;
+}
+.outputError {
+    padding: 2rem 1rem;
+}
+.outputError p {
+    font-weight: 500;
+}
+.buttonDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+.buttonDiv button{
+    background-color: purple;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 6rem;
+    margin: 1rem;
+}
